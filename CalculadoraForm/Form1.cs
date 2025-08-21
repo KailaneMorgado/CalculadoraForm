@@ -17,28 +17,19 @@ namespace CalculadoraForm
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
 
+
+        private void btnIgual_Click(object sender, EventArgs e)
+        {
+            //Implementar depois
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void numero_Click(object sender, EventArgs e)
         {
+            //Obter um botão que está chamando esse evento:
+            Button botaoClicado = (Button)sender;
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txbTela_TextChanged(object sender, EventArgs e)
-        {
+            //Adicionar o text do botão clicado no text box:
 
         }
     }
