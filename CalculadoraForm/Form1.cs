@@ -12,6 +12,10 @@ namespace CalculadoraForm
 {
     public partial class FmTela : Form
     {
+        //variaveis globais:
+        bool operadorClicado = true;
+
+
         public FmTela()
         {
             InitializeComponent();
@@ -30,7 +34,26 @@ namespace CalculadoraForm
             Button botaoClicado = (Button)sender;
 
             //Adicionar o text do botão clicado no text box:
-
+            txbTela.Text = botaoClicado.Text;
         }
+
+        private void operador_Click(object sender, EventArgs e)
+        {
+            //Verificar se o operador ainda não foi clicado:
+            if (operadorClicado == false)
+            {
+
+                //Obter um botão que está chamando esse evento:
+                Button botaoClicado = (Button)sender;
+
+                //Adicionar o text do botão clicado no text box:
+                txbTela.Text = botaoClicado.Text;
+
+                //Mudar operadorClicado para true:
+                operadorClicado = true;
+            }
+        }
+
+
     }
 }

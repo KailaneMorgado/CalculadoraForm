@@ -214,6 +214,7 @@
             this.btnMais.TabIndex = 14;
             this.btnMais.Text = "+";
             this.btnMais.UseVisualStyleBackColor = true;
+            this.btnMais.Click += new System.EventHandler(this.operador_Click);
             // 
             // btnMenos
             // 
@@ -227,6 +228,7 @@
             this.btnMenos.TabIndex = 15;
             this.btnMenos.Text = "-";
             this.btnMenos.UseVisualStyleBackColor = true;
+            this.btnMenos.Click += new System.EventHandler(this.operador_Click);
             // 
             // btnMultiplicacao
             // 
@@ -240,6 +242,7 @@
             this.btnMultiplicacao.TabIndex = 16;
             this.btnMultiplicacao.Text = "*";
             this.btnMultiplicacao.UseVisualStyleBackColor = true;
+            this.btnMultiplicacao.Click += new System.EventHandler(this.operador_Click);
             // 
             // btnDividir
             // 
@@ -253,6 +256,7 @@
             this.btnDividir.TabIndex = 17;
             this.btnDividir.Text = "/";
             this.btnDividir.UseVisualStyleBackColor = true;
+            this.btnDividir.Click += new System.EventHandler(this.operador_Click);
             // 
             // btnLimpar
             // 
